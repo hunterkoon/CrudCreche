@@ -86,16 +86,16 @@
   <data name="label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
     <value>MiddleRight</value>
   </data>
-  <data name="textBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="textBox_email.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="textBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms.Primitives">
+  <data name="textBox_email.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms.Primitives">
     <value>10, 10, 30, 10</value>
   </data>
-  <data name="textBox1.PlaceholderText" xml:space="preserve">
+  <data name="textBox_email.PlaceholderText" xml:space="preserve">
     <value>Email do Responsavel</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="textBox_email.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>163, 23</value>
   </data>
   <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
@@ -117,13 +117,31 @@
     <value>MiddleRight</value>
   </data>
   <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>17, 264</value>
+    <value>17, 324</value>
   </data>
   <data name="tableLayoutPanel1.RowCount" type="System.Int32, System.Private.CoreLib">
     <value>5</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>309, 214</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>108, 544</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>218, 35</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>17, 544</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>87, 35</value>
+  </data>
+  <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>182, 22</value>
   </data>
   <data name="toolStripMenuItem1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
@@ -133,5 +151,26 @@
   </data>
   <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>75, 20</value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>183, 26</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>94, 87</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>150, 150</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>150, 23</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>Buscar Foto</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>345, 600</value>
   </data>
 </root>

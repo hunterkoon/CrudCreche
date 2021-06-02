@@ -33,7 +33,7 @@ namespace acessoDados
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_email = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,9 +49,13 @@ namespace acessoDados
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -59,7 +63,7 @@ namespace acessoDados
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Azure;
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.textBox_email, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
@@ -69,50 +73,42 @@ namespace acessoDados
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.textBox_nomeResposavel, 1, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.UseWaitCursor = true;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.UseWaitCursor = true;
             // 
-            // textBox1
+            // textBox_email
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            this.textBox1.UseWaitCursor = true;
+            resources.ApplyResources(this.textBox_email, "textBox_email");
+            this.textBox_email.Name = "textBox_email";
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.UseWaitCursor = true;
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.UseWaitCursor = true;
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.UseWaitCursor = true;
             // 
             // textBox_nome
             // 
             resources.ApplyResources(this.textBox_nome, "textBox_nome");
             this.textBox_nome.Name = "textBox_nome";
-            this.textBox_nome.UseWaitCursor = true;
             // 
             // textBox_telefone
             // 
             resources.ApplyResources(this.textBox_telefone, "textBox_telefone");
             this.textBox_telefone.Name = "textBox_telefone";
-            this.textBox_telefone.UseWaitCursor = true;
             this.textBox_telefone.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // comboBox_idade
@@ -127,20 +123,17 @@ namespace acessoDados
             resources.GetString("comboBox_idade.Items4"),
             resources.GetString("comboBox_idade.Items5")});
             this.comboBox_idade.Name = "comboBox_idade";
-            this.comboBox_idade.UseWaitCursor = true;
             this.comboBox_idade.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.UseWaitCursor = true;
             // 
             // textBox_nomeResposavel
             // 
             resources.ApplyResources(this.textBox_nomeResposavel, "textBox_nomeResposavel");
             this.textBox_nomeResposavel.Name = "textBox_nomeResposavel";
-            this.textBox_nomeResposavel.UseWaitCursor = true;
             // 
             // button1
             // 
@@ -149,7 +142,6 @@ namespace acessoDados
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
@@ -159,7 +151,6 @@ namespace acessoDados
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.UseWaitCursor = true;
             // 
             // menuStrip1
             // 
@@ -169,7 +160,6 @@ namespace acessoDados
             this.toolStripMenuItem1,
             this.toolStripMenuItem2});
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.UseWaitCursor = true;
             // 
             // contextMenuStrip1
             // 
@@ -180,6 +170,7 @@ namespace acessoDados
             this.toolStripMenuItem3});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.OwnerItem = this.toolStripMenuItem1;
+            this.contextMenuStrip1.ShowCheckMargin = true;
             // 
             // toolStripMenuItem3
             // 
@@ -202,25 +193,43 @@ namespace acessoDados
             this.toolStripMenuItem2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::acessoDados.Properties.Resources.child_face;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // folderBrowserDialog1
+            // 
+            resources.ApplyResources(this.folderBrowserDialog1, "folderBrowserDialog1");
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.button2;
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.UseWaitCursor = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,7 +254,10 @@ namespace acessoDados
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_email;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
 

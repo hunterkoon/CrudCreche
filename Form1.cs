@@ -16,6 +16,13 @@ namespace acessoDados
         public Form1()
         {
             InitializeComponent();
+
+            textBox_nome.Enabled = false;
+            textBox_telefone.Enabled = false;
+            comboBox_idade.Enabled = false;
+            textBox_nomeResposavel.Enabled = false;
+            textBox_email.Enabled = false;
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
