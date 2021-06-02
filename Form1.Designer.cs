@@ -50,12 +50,15 @@ namespace acessoDados
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.Button_foto = new System.Windows.Forms.Button();
+            this.Button_reg = new System.Windows.Forms.Button();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -73,7 +76,7 @@ namespace acessoDados
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.textBox_nomeResposavel, 1, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel1_Paint);
             // 
             // label5
             // 
@@ -109,7 +112,7 @@ namespace acessoDados
             // 
             resources.ApplyResources(this.textBox_telefone, "textBox_telefone");
             this.textBox_telefone.Name = "textBox_telefone";
-            this.textBox_telefone.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textBox_telefone.TextChanged += new System.EventHandler(this.TextBox3_TextChanged);
             // 
             // comboBox_idade
             // 
@@ -123,7 +126,7 @@ namespace acessoDados
             resources.GetString("comboBox_idade.Items4"),
             resources.GetString("comboBox_idade.Items5")});
             this.comboBox_idade.Name = "comboBox_idade";
-            this.comboBox_idade.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox_idade.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -142,7 +145,7 @@ namespace acessoDados
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
@@ -200,23 +203,41 @@ namespace acessoDados
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // openFileDialog1
             // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.openFileDialog1.FileName = "openFileDialog1";
+            resources.ApplyResources(this.openFileDialog1, "openFileDialog1");
             // 
-            // folderBrowserDialog1
+            // Button_foto
             // 
-            resources.ApplyResources(this.folderBrowserDialog1, "folderBrowserDialog1");
+            resources.ApplyResources(this.Button_foto, "Button_foto");
+            this.Button_foto.Name = "Button_foto";
+            this.Button_foto.UseVisualStyleBackColor = true;
+            this.Button_foto.Click += new System.EventHandler(this.Button_foto_Click);
+            // 
+            // Button_reg
+            // 
+            resources.ApplyResources(this.Button_reg, "Button_reg");
+            this.Button_reg.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Button_reg.ForeColor = System.Drawing.Color.Transparent;
+            this.Button_reg.Name = "Button_reg";
+            this.Button_reg.UseVisualStyleBackColor = false;
+            this.Button_reg.Click += new System.EventHandler(this.Button_reg_Click);
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.Button_reg, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.Button_foto, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 1);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ContextMenuStrip = this.contextMenuStrip1;
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.button1);
@@ -230,6 +251,7 @@ namespace acessoDados
             this.menuStrip1.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,8 +278,10 @@ namespace acessoDados
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox_email;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button Button_foto;
+        private System.Windows.Forms.Button Button_reg;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }
 

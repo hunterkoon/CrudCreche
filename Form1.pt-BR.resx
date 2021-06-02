@@ -78,7 +78,7 @@
   </data>
   <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>80, 22</value>
+    <value>92, 22</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>E-mail</value>
@@ -89,6 +89,9 @@
   <data name="textBox_email.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="textBox_email.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>126, 180</value>
+  </data>
   <data name="textBox_email.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms.Primitives">
     <value>10, 10, 30, 10</value>
   </data>
@@ -96,19 +99,46 @@
     <value>Email do Responsavel</value>
   </data>
   <data name="textBox_email.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>163, 23</value>
+    <value>187, 23</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>92, 20</value>
   </data>
   <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
     <value>MiddleRight</value>
   </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>92, 20</value>
+  </data>
   <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
     <value>MiddleRight</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>92, 20</value>
   </data>
   <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
     <value>MiddleRight</value>
   </data>
+  <data name="textBox_nome.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>126, 12</value>
+  </data>
+  <data name="textBox_nome.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>187, 23</value>
+  </data>
+  <data name="textBox_telefone.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>126, 96</value>
+  </data>
+  <data name="textBox_telefone.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>187, 23</value>
+  </data>
+  <data name="comboBox_idade.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>126, 54</value>
+  </data>
+  <data name="comboBox_idade.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>187, 23</value>
+  </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>80, 20</value>
+    <value>92, 20</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Reponsavel</value>
@@ -116,29 +146,41 @@
   <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
     <value>MiddleRight</value>
   </data>
+  <data name="textBox_nomeResposavel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>126, 138</value>
+  </data>
+  <data name="textBox_nomeResposavel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>187, 23</value>
+  </data>
   <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>17, 324</value>
+    <value>0, 324</value>
   </data>
   <data name="tableLayoutPanel1.RowCount" type="System.Int32, System.Private.CoreLib">
     <value>5</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>309, 214</value>
+    <value>345, 214</value>
+  </data>
+  <data name="button1.Enabled" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>108, 544</value>
+    <value>118, 544</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>218, 35</value>
+    <value>227, 35</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>Salvar</value>
   </data>
+  <data name="button2.Enabled" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
+  </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>17, 544</value>
+    <value>0, 544</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>87, 35</value>
+    <value>115, 35</value>
   </data>
   <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>182, 22</value>
@@ -155,20 +197,59 @@
   <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>183, 26</value>
   </data>
+  <data name="pictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pictureBox1.Enabled" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
+  </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>94, 87</value>
+    <value>3, 66</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>150, 150</value>
+    <value>339, 186</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+    <value>Zoom</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>150, 23</value>
+  <data name="Button_foto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="button3.Text" xml:space="preserve">
+  <data name="Button_foto.Enabled" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
+  </data>
+  <data name="Button_foto.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>3, 258</value>
+  </data>
+  <data name="Button_foto.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>339, 30</value>
+  </data>
+  <data name="Button_foto.Text" xml:space="preserve">
     <value>Buscar Foto</value>
+  </data>
+  <data name="Button_reg.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Button_reg.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI Black, 11.25pt, style=Bold</value>
+  </data>
+  <data name="Button_reg.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>3, 3</value>
+  </data>
+  <data name="Button_reg.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>339, 57</value>
+  </data>
+  <data name="Button_reg.Text" xml:space="preserve">
+    <value>Novo Registro</value>
+  </data>
+  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, System.Private.CoreLib">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>345, 291</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>345, 600</value>
